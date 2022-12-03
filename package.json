@@ -1,0 +1,37 @@
+{
+  "name": "@jneander/prettier-config",
+  "version": "1.0.0",
+  "description": "Personal prettier configuration",
+  "license": "MIT",
+  "author": "Jeremy Neander",
+  "main": "./prettier.config.js",
+  "files": [
+    "./prettier.config.js",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "lint:prettier": "prettier --check .",
+    "lint:prettier:fix": "prettier --write .",
+    "prepare": "[ -z $CI ] && git config --local core.hooksPath .githooks || true"
+  },
+  "lint-staged": {
+    "*": "prettier --check --ignore-unknown"
+  },
+  "prettier": "./prettier.config.js",
+  "release": {
+    "extends": [
+      "@jneander/semantic-release-config"
+    ]
+  },
+  "devDependencies": {
+    "@jneander/semantic-release-config": "^1.0.1",
+    "lint-staged": "^13.0.0",
+    "prettier": "^2.8.0"
+  },
+  "peerDependencies": {
+    "prettier": "^2.4.0"
+  },
+  "engines": {
+    "node": ">= 12"
+  }
+}
