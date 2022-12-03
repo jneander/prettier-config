@@ -10,9 +10,13 @@
     "CHANGELOG.md"
   ],
   "scripts": {
+    "lint:commits": "commitlint --from $(git symbolic-ref --short refs/remotes/origin/HEAD) --to HEAD",
     "lint:prettier": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
     "prepare": "[ -z $CI ] && git config --local core.hooksPath .githooks || true"
+  },
+  "commitlint": {
+    "extends": "@jneander/commitlint-config"
   },
   "lint-staged": {
     "*": "prettier --check --ignore-unknown"
@@ -24,6 +28,8 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@jneander/commitlint-config": "^1.0.1",
     "@jneander/semantic-release-config": "^1.0.1",
     "lint-staged": "^13.0.0",
     "prettier": "^2.8.0"
