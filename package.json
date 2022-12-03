@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal prettier configuration",
   "license": "MIT",
-  "author": "Jeremy Neander",
+  "author": "Jeremy Neander <jeremy.neander@gmail.com>",
   "main": "./prettier.config.js",
   "files": [
     "./prettier.config.js",
