@@ -30,12 +30,12 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
     "@jneander/commitlint-config": "^1.0.1",
-    "@jneander/semantic-release-config": "^1.0.1",
-    "lint-staged": "^13.0.0",
-    "prettier": "^2.8.0"
+    "@jneander/semantic-release-config": "^1.0.2",
+    "lint-staged": "^14.0.0",
+    "prettier": "^3.0.0"
   },
   "peerDependencies": {
-    "prettier": "^2.4.0"
+    "prettier": ">= 2.4.0"
   },
   "engines": {
     "node": ">= 12"
