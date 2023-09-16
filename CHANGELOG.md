@@ -7,6 +7,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/jneander/prettier-config/compare/v1.0.0...v1.0.1) (2023-09-16)
+
+### Bug Fixes
+
+- update dependencies
+  ([4f112bb](https://github.com/jneander/prettier-config/commit/4f112bb4e2d2bfcd650e00c7ebab4e6059819060))
+
 ## 1.0.0 (2022-12-03)
 
 ### Features
